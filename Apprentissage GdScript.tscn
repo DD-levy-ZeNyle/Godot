@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c4fxln8yaiwnb"]
 
 [ext_resource type="Script" uid="uid://k6uj85sxfvvp" path="res://apprentissage_gd_script.gd" id="1_jah28"]
+[ext_resource type="Script" uid="uid://brntcqrvaj87l" path="res://emitter.gd" id="2_1qqg1"]
 
 [node name="Node" type="Node" unique_id=1016223215]
 script = ExtResource("1_jah28")
@@ -25,5 +26,8 @@ offset_right = 8.0
 offset_bottom = 8.0
 theme_override_font_sizes/font_size = 80
 text = "Clique-moi"
+
+[node name="Emitter" type="Node" parent="." unique_id=1979573175]
+script = ExtResource("2_1qqg1")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
