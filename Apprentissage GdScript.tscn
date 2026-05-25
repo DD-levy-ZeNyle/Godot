@@ -17,6 +17,7 @@ offset_right = 66.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_font_sizes/font_size = 45
 text = "Texte par default"
 
 [node name="Button" type="Button" parent="." unique_id=247974978]
@@ -24,3 +25,5 @@ offset_right = 8.0
 offset_bottom = 8.0
 theme_override_font_sizes/font_size = 80
 text = "Clique-moi"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
