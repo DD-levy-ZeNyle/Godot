@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://d266qdxxmgpmu"]
-
-[ext_resource type="Script" uid="uid://ddvu7iejaa56c" path="res://Mon premierscript.gd" id="1_72wji"]
-
-[node name="Node" type="Node" unique_id=1016223215]
-script = ExtResource("1_72wji")
