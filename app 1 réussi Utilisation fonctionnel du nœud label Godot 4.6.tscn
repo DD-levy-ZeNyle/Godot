@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://blkrlbt360crc"]
+[gd_scene format=3 uid="uid://cefieyqabtovc"]
 
-[ext_resource type="Script" uid="uid://ddvu7iejaa56c" path="res://Mon premierscript.gd" id="1_lqyou"]
+[ext_resource type="Script" uid="uid://ddvu7iejaa56c" path="res://Mon premierscript.gd" id="1_vuxpf"]
 
 [node name="Node" type="Node" unique_id=1016223215]
-script = ExtResource("1_lqyou")
+script = ExtResource("1_vuxpf")
 
 [node name="Texte" type="Label" parent="." unique_id=1408276402]
 anchors_preset = 8
