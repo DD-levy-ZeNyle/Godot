@@ -1,17 +1,19 @@
 extends Node
 
-
+var vie = 100:
+# Securisation du code setter et getter 
+	set(value):  # limitation du champ
+		vie = clamp( value, 0, 100)
+		print (" Vie mise à jour :", vie)
+	get: # retourne la valeur sécurisée de la vie 
+		print (" Vie consultée :", vie)
+		return vie
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var gobelin = Ennemis.new()
-	var orc     = Ennemis.new()
+	vie = 9999 # mauvaise pratique tentative de modification du code
 
-	gobelin.healf = 50
-	orc.healf     = 20
 
-	print ("gobelin :", gobelin.healf)
-	print ("orc :", orc.healf)
-	print("lolololololo")
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
