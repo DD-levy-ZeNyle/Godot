@@ -3,8 +3,8 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Emitter.connect("message_envoye", _on_message_recu)
-
+	var gobelin = Ennemis.new()
+	var orc     = Ennemis.new()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
