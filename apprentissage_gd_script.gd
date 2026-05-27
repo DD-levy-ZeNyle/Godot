@@ -1,20 +1,19 @@
 extends Node
 
-var inventaire =[" L' Épée ", " Le Bouclier ", " La Potion "]
+# la différence entre les arrays et les dictionnaires 
+# Array c'est un type de conteneur avec index 
+# Dictionnaire c'est un type de conteneur avec clé 
+
+var personnage = { # Création d'un dictionnaire 
+	"nom": "Héro",
+	"vie": 100,
+	"attack": 25
+}
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for objet in inventaire: # Récupérer tous les éléments d'un array avec une boucle for
-		print(" Objet :", objet)
-
-	inventaire.append(" L'Arc ") # permet l'ajout des éléments dans l'inventaire
-	print(inventaire)
-
-
-
-
-	inventaire.erase(" La Potion ") # permet de retirer un élément de l'inventaire
-	print (inventaire)
-
+	print(personnage ["nom"])
+	print(" La vie du personnage est :", personnage["vie"] )
+	print(" L'attaque de votre personnage est :", personnage["attack"])
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
