@@ -11,9 +11,11 @@ var personnage = { # Création d'un dictionnaire
 }
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print(personnage ["nom"])
-	print(" La vie du personnage est :", personnage["vie"] )
-	print(" L'attaque de votre personnage est :", personnage["attack"])
+	personnage["vie"] -=10 # fonctionne retirer dans un dictionnaire
+#Note: Le respect de la nommenclature lors de l'écriture des clés est obligatoire ainsi que le respect des espaces
+	personnage[" magie "] = 50 # fonctionne ajouter dans un dictionnaire
+
+	print(personnage)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
