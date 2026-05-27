@@ -1,16 +1,11 @@
 extends Node
 
-var vie = 100:
-# Securisation du code setter et getter 
-	set(value):  # limitation du champ
-		vie = clamp( value, 0, 100)
-		print (" Vie mise à jour :", vie)
-	get: # retourne la valeur sécurisée de la vie 
-		print (" Vie consultée :", vie)
-		return vie
+var inventaire =[" L' Épée ", " Le Bouclier ", " La Potion "]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	vie = 9999 # mauvaise pratique tentative de modification du code
+	print(" Voici :", inventaire[0])
+	print("Voici :", inventaire[1])
+	print(" Voici :", inventaire[2])
 
 
 
