@@ -7,6 +7,12 @@ func _ready() -> void:
 	print("Voici :", inventaire[1])
 	print(" Voici :", inventaire[2])
 
+	inventaire.append(" L'Arc ")
+	print(inventaire)
+
+	inventaire.erase(" La Potion ")
+	print (inventaire)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
