@@ -1,18 +1,15 @@
 extends Node
 
-# la différence entre les arrays et les dictionnaires 
-# Array c'est un type de conteneur avec index 
-# Dictionnaire c'est un type de conteneur avec clé 
-
-var personnage = { # Création d'un dictionnaire 
-	"nom": "Héro",
-	"vie": 100,
-	"attack": 25
+enum Action {
+	Attack,
+	Fuir,
+	Utiliser_Potion
 }
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for cle in personnage:
-		print(cle," : ", personnage[cle])
+	var action = Action.Attack
+	if action == Action.Attack:
+		print(" L'attauqe est lancée  !!!")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
