@@ -14,6 +14,7 @@ config/name="Apprentissage GDscript"
 run/main_scene="uid://br1b071hyvt86"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+config/tags=PackedStringArray("bon_code", "education_gdscript", "terminer", "versionning_disponible_sur_github")
 
 [physics]
 
